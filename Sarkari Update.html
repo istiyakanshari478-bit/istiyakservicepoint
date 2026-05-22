@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#222;
+}
+
+/* HEADER */
+
+header{
+    width:100%;
+    background:linear-gradient(135deg,#0047ff,#00aaff);
+    padding:15px 8%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:#fff;
+}
+
+.logo h1{
+    font-size:30px;
+    font-weight:700;
+}
+
+.logo p{
+    font-size:14px;
+    color:#e6f3ff;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#fff;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:yellow;
+}
+
+/* HERO SECTION */
+
+.hero{
+    width:100%;
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:40px 8%;
+    background:
+    linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
+    url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1400&q=80');
+    background-size:cover;
+    background-position:center;
+    color:#fff;
+}
+
+.hero-content h2{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.hero-content h3{
+    font-size:28px;
+    color:#ffe600;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:18px;
+    max-width:800px;
+    margin:auto;
+    line-height:1.7;
+}
+
+.hero-btn{
+    margin-top:30px;
+}
+
+.hero-btn a{
+    text-decoration:none;
+    background:#ffe600;
+    color:#000;
+    padding:14px 35px;
+    border-radius:40px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.hero-btn a:hover{
+    background:#fff;
+}
+
+/* SERVICES */
+
+.section-title{
+    text-align:center;
+    margin:70px 0 40px;
+}
+
+.section-title h2{
+    font-size:40px;
+    color:#0047ff;
+}
+
+.services{
+    width:100%;
+    padding:0 8% 70px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    border-radius:18px;
+    padding:35px 25px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:70px;
+    margin-bottom:20px;
+}
+
+.card h3{
+    color:#0047ff;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#555;
+    font-size:15px;
+}
+
+/* ABOUT */
+
+.about{
+    padding:70px 8%;
+    background:#fff;
+    text-align:center;
+}
+
+.about h2{
+    font-size:40px;
+    color:#0047ff;
+    margin-bottom:20px;
+}
+
+.about p{
+    max-width:1000px;
+    margin:auto;
+    line-height:1.8;
+    color:#444;
+}
+
+/* NOTICE */
+
+.notice{
+    padding:70px 8%;
+    background:#f0f5ff;
+}
+
+.notice-box{
+    background:#fff;
+    padding:40px;
+    border-left:6px solid red;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.notice-box h2{
+    color:red;
+    margin-bottom:20px;
+}
+
+.notice-box ul{
+    padding-left:20px;
+}
+
+.notice-box ul li{
+    margin-bottom:12px;
+    line-height:1.6;
+}
+
+/* CONTACT */
+
+.contact{
+    padding:70px 8%;
+    text-align:center;
+    background:#fff;
+}
+
+.contact h2{
+    font-size:40px;
+    color:#0047ff;
+    margin-bottom:20px;
+}
+
+.contact p{
+    margin-bottom:10px;
+    font-size:18px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#001b55;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+}
+
+footer p{
+    font-size:15px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.navbar{
+    flex-direction:column;
+    gap:20px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero-content h2{
+    font-size:38px;
+}
+
+.hero-content h3{
+    font-size:22px;
+}
+
+}
+
+</style>
+</head>
+<header>
+    <div class="navbar">
+
+        <div class="logo">
+            <h1>ISTIYAK SERVICE POINT</h1>
+            <p>डिजिटल सेवाओं का स्मार्ट समाधान</p>
+        </div>
+		</header>
+
+</section>
+
+
+
+<!-- =========================
+     SARKARI VACANCY UPDATE
+========================= -->
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<section style="
+padding:70px 8%;
+background:#f4f7fb;
+">
+
+<!-- TITLE -->
+
+<div style="
+text-align:center;
+margin-bottom:50px;
+">
+
+<h2 style="
+font-size:42px;
+color:#ff0000;
+">
+
+📰 Sarkari Vacancy Updates
+
+</h2>
+
+<p style="
+color:#555;
+font-size:18px;
+">
+
+Latest Government Jobs, Admit Card & Result Updates
+
+</p>
+
+</div>
+
+<!-- VACANCY GRID -->
+
+<div style="
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+">
+
+<!-- CARD 1 -->
+
+<div class="vacancy-card">
+
+<i class="fa-solid fa-user-graduate"></i>
+
+<h3>Bihar Police Vacancy 2026</h3>
+
+<p>
+Bihar Police latest recruitment online apply।
+</p>
+
+<a href="https://www.csbc.bih.nic.in/"
+target="_blank">
+
+Apply Now
+
+</a>
+
+</div>
+
+<!-- CARD 2 -->
+
+<div class="vacancy-card">
+
+<i class="fa-solid fa-building-columns"></i>
+
+<h3>SSC GD Constable</h3>
+
+<p>
+SSC GD Constable recruitment & exam updates।
+</p>
+
+<a href="https://ssc.nic.in/"
+target="_blank">
+
+View Details
+
+</a>
+
+</div>
+
+<!-- CARD 3 -->
+
+<div class="vacancy-card">
+
+<i class="fa-solid fa-train"></i>
+
+<h3>Railway Vacancy</h3>
+
+<p>
+RRB Railway jobs and online application।
+</p>
+
+<a href="https://www.rrbcdg.gov.in/"
+target="_blank">
+
+Apply Here
+
+</a>
+
+</div>
+
+<!-- CARD 4 -->
+
+<div class="vacancy-card">
+
+<i class="fa-solid fa-school"></i>
+
+<h3>Bihar Teacher Vacancy</h3>
+
+<p>
+BPSC Teacher recruitment latest notification।
+</p>
+
+<a href="https://www.bpsc.bih.nic.in/"
+target="_blank">
+
+Check Update
+
+</a>
+
+</div>
+
+<!-- CARD 5 -->
+
+<div class="vacancy-card">
+
+<i class="fa-solid fa-file-circle-check"></i>
+
+<h3>Admit Card Download</h3>
+
+<p>
+All government exam admit card download।
+</p>
+
+<a href="https://www.sarkariresult.com/"
+target="_blank">
+
+Download
+
+</a>
+
+</div>
+
+<!-- CARD 6 -->
+
+<div class="vacancy-card">
+
+<i class="fa-solid fa-square-poll-vertical"></i>
+
+<h3>Result Update</h3>
+
+<p>
+Latest Sarkari result and merit list updates।
+</p>
+
+<a href="https://www.sarkariresult.com/"
+target="_blank">
+
+View Result
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+     CSS
+========================= -->
+
+<style>
+
+.vacancy-card{
+
+background:#fff;
+padding:30px 25px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+transition:0.3s;
+
+}
+
+.vacancy-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.vacancy-card i{
+
+font-size:60px;
+color:#ff0000;
+margin-bottom:20px;
+
+}
+
+.vacancy-card h3{
+
+font-size:24px;
+margin-bottom:15px;
+color:#111;
+
+}
+
+.vacancy-card p{
+
+font-size:16px;
+color:#555;
+line-height:1.7;
+
+}
+
+.vacancy-card a{
+
+display:inline-block;
+margin-top:18px;
+padding:12px 24px;
+background:#ff0000;
+color:#fff;
+text-decoration:none;
+border-radius:30px;
+font-size:15px;
+transition:0.3s;
+
+}
+
+.vacancy-card a:hover{
+
+background:#111;
+
+}
+
+</style>
